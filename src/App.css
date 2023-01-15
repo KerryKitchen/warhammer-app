@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-color: #444;
+  --unit-card-border: #1d4ed8;
+  --unit-card-divider: #e2e8f0;
+  --unit-equipment-divider: #cbd5e1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.faction-header {
+  margin: 2rem 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+}
+.faction-header:hover {
+  text-decoration: underline;
+  cursor: pointer;      
+}
+.faction-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ultramarine colors */
+.ultramarine-theme-color {
+  color: #0F3D7C;
+}
+.ultramarine-border {
+  border: 1px solid #0F3D7C;
+}
+.ultramarine-bg {
+  background-color: #0F3D7C;
+}
+
+/* Necron colors */
+.necron-theme-color {
+  color: #5BE93C;
+}
+.necron-border {
+  border: 1px solid #5BE93C;
+}
+.necron-bg {
+  background-color: #5BE93C;
+}
+
+.unit-card {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: .75rem;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+}
+.unit-card-header {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+.unit-card-header:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.unit-equipment {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 0.25rem ;
+  border-top: 1px solid var(--unit-card-divider);
+  border-bottom: 1px solid var(--unit-card-divider);
+}
+.unit-equipment-descriptions {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  margin-right: 0.5rem;
+}
+.desc {
+  display: flex;
+  height: 3rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  border-bottom: 1px dotted var(--unit-equipment-divider);
+}
+.desc-last {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.unit-equipment-btns {
+  display: flex;
+  flex-direction: column;
+}
+.unit-actions {     
+  display: flex;
+  width: 100%;
+  padding: 0 0.25rem;
+  margin: 0.5rem auto;
+}
+
+.icon-button {
+  width: 4rem;
+  height: 3rem;
+  cursor: pointer;
+  border: 1px solid #DDD;
+  border-radius: 0.25rem;
+  background-color: #FAFAFA;
+  box-shadow: 1px 1px 0 0 #EEE;
+}
+.icon-button:hover {
+  box-shadow: none;
+}
+.icon-button:active {
+  background-color: white;      
 }
