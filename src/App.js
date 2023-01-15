@@ -10,11 +10,15 @@ import grenade_audio from './assets/audio/space-marines/grenade.mp3';
 import biker_move_audio from './assets/audio/space-marines/biker-move.mp3';
 import deflect_hit_audio from './assets/audio/space-marines/biker-deflect.mp3';
 import infantry_take_damage_audio from './assets/audio/space-marines/infantry-take-damage.mp3';
+import infantry_take_damage_2_audio from './assets/audio/space-marines/infantry-take-damage-2.mp3';
 import biker_die_audio from './assets/audio/space-marines/biker-die.mp3';
 import power_sword_audio from './assets/audio/space-marines/power-sword.mp3';
 import infantry_die_audio from './assets/audio/space-marines/infantry-die.mp3';
+import infantry_die_2_audio from './assets/audio/space-marines/infantry-die-2.mp3';
 import infantry_move_audio from './assets/audio/space-marines/infantry-move.mp3';
 import plasma_pistol_audio from './assets/audio/space-marines/plasma-pistol.mp3';
+import plasma_gun_audio from './assets/audio/space-marines/plasma-gun.mp3';
+import biker_hit_audio from './assets/audio/space-marines/biker-hit.mp3';
 
 // UI icons
 import ap from './assets/images/ap.png';
@@ -37,11 +41,15 @@ function App() {
   const [biker_move] = useSound(biker_move_audio, { volume: user_volume })
   const [deflect_hit] = useSound(deflect_hit_audio, { volume: user_volume })
   const [infantry_take_damage] = useSound(infantry_take_damage_audio, { volume: user_volume })
+  const [infantry_take_damage_2] = useSound(infantry_take_damage_2_audio, { volume: user_volume })
   const [biker_die] = useSound(biker_die_audio, { volume: user_volume })
   const [power_sword] =  useSound(power_sword_audio, { volume: user_volume })
   const [infantry_move] = useSound(infantry_move_audio, { volume:user_volume })
   const [infantry_die] = useSound(infantry_die_audio, { volume:user_volume })
+  const [infantry_die_2] = useSound(infantry_die_2_audio, { volume:user_volume })
   const [plasma_pistol] = useSound(plasma_pistol_audio, { volume:user_volume })
+  const [plasma_gun] = useSound(plasma_gun_audio, { volume:user_volume })
+  const [biker_hit] = useSound(biker_hit_audio, { volume:user_volume })
 
   return (
 
@@ -73,7 +81,7 @@ function App() {
           <div className="unit-actions justify-between">
             <img className="icon-button" src={mv} alt="icon" onClick={() => infantry_move()}/>
             <img className="icon-button" src={sv} alt="icon" onClick={() => deflect_hit()}/>
-            <img className="icon-button" src={ap} alt="icon" onClick={() => infantry_take_damage()}/>
+            <img className="icon-button" src={ap} alt="icon" onClick={() => infantry_take_damage_2()}/>
             <img className="icon-button" src={dead} alt="icon" onClick={() => infantry_die()}/>
           </div>
         </div> {/* end unit-card */}
@@ -93,7 +101,7 @@ function App() {
             <div className="unit-equipment-btns space-y-2">
               <img className="icon-button" src={bs} alt="icon" onClick={() => bolter_pistol()}/>
               <img className="icon-button" src={bs} alt="icon" onClick={() => plasma_pistol()}/>
-              <img className="icon-button" src={bs} alt="icon" onClick={() => plasma_pistol()}/>
+              <img className="icon-button" src={bs} alt="icon" onClick={() => plasma_gun()}/>
               <img className="icon-button" src={ws} alt="icon" onClick={() => chainsword()}/>
               <img className="icon-button" src={blast} alt="icon" onClick={() => grenade()}/>
             </div>
@@ -102,7 +110,7 @@ function App() {
             <img className="icon-button" src={mv} alt="icon" onClick={() => infantry_move()}/>
             <img className="icon-button" src={sv} alt="icon" onClick={() => deflect_hit()}/>
             <img className="icon-button" src={ap} alt="icon" onClick={() => infantry_take_damage()}/>
-            <img className="icon-button" src={dead} alt="icon" onClick={() => infantry_die()}/>
+            <img className="icon-button" src={dead} alt="icon" onClick={() => infantry_die_2()}/>
           </div>
         </div> {/* end unit-card */}
 
@@ -127,7 +135,7 @@ function App() {
           <div className="unit-actions justify-between">
             <img className="icon-button" src={mv} alt="icon" onClick={() => biker_move()}/>
             <img className="icon-button" src={sv} alt="icon" onClick={() => deflect_hit()}/>
-            <img className="icon-button" src={ap} alt="icon" onClick={() => infantry_take_damage()}/>
+            <img className="icon-button" src={ap} alt="icon" onClick={() => biker_hit()}/>
             <img className="icon-button" src={dead} alt="icon" onClick={() => biker_die()}/>
           </div>
         </div> {/* end unit-card */}
