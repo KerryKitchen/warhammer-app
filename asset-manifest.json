@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/warhammer-app/static/css/main.7218d4a8.css",
-    "main.js": "/warhammer-app/static/js/main.f42dbced.js",
+    "main.css": "/warhammer-app/static/css/main.e6801570.css",
+    "main.js": "/warhammer-app/static/js/main.43c2e77d.js",
     "static/js/845.a797a9aa.chunk.js": "/warhammer-app/static/js/845.a797a9aa.chunk.js",
+    "static/media/infantry-move.mp3": "/warhammer-app/static/media/infantry-move.dfdd2c05426439b09ff9.mp3",
     "static/media/biker-move.mp3": "/warhammer-app/static/media/biker-move.5a9763c7949a1c2d6e64.mp3",
     "static/media/biker-die.mp3": "/warhammer-app/static/media/biker-die.39add002e87766c6ddaa.mp3",
     "static/media/chainsword.mp3": "/warhammer-app/static/media/chainsword.e0dc398c3b29c3f35068.mp3",
+    "static/media/power-sword.mp3": "/warhammer-app/static/media/power-sword.84c38817882040b8752e.mp3",
+    "static/media/plasma-pistol.mp3": "/warhammer-app/static/media/plasma-pistol.fd02a0f0b90d9833c678.mp3",
     "static/media/grenade.mp3": "/warhammer-app/static/media/grenade.0da83a6adeb1a1c88eb0.mp3",
+    "static/media/infantry-die.mp3": "/warhammer-app/static/media/infantry-die.7d56aace8d40ef27bec2.mp3",
     "static/media/biker-deflect.mp3": "/warhammer-app/static/media/biker-deflect.40877ea800cbd4b30434.mp3",
     "static/media/bolter-heavy.mp3": "/warhammer-app/static/media/bolter-heavy.fd31bebc9915754ed313.mp3",
     "static/media/bolter-pistol.mp3": "/warhammer-app/static/media/bolter-pistol.63214945fef8161a3bc4.mp3",
     "static/media/infantry-take-damage.mp3": "/warhammer-app/static/media/infantry-take-damage.62618d2efa0e064c937b.mp3",
     "index.html": "/warhammer-app/index.html",
-    "main.7218d4a8.css.map": "/warhammer-app/static/css/main.7218d4a8.css.map",
-    "main.f42dbced.js.map": "/warhammer-app/static/js/main.f42dbced.js.map",
+    "main.e6801570.css.map": "/warhammer-app/static/css/main.e6801570.css.map",
+    "main.43c2e77d.js.map": "/warhammer-app/static/js/main.43c2e77d.js.map",
     "845.a797a9aa.chunk.js.map": "/warhammer-app/static/js/845.a797a9aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7218d4a8.css",
-    "static/js/main.f42dbced.js"
+    "static/css/main.e6801570.css",
+    "static/js/main.43c2e77d.js"
   ]
 }
